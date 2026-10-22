@@ -3,9 +3,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=IBM+Plex+Sans:wght@400;600&display=swap">
 <style>html,body{margin:0;background:#00142B;height:100%;overflow:hidden;font-family:"IBM Plex Sans",sans-serif}
 #stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center;transform:translate(-50%,-50%) scale(var(--s,1))}
-#stage section{position:absolute;inset:0;width:1920px;height:1080px;box-sizing:border-box;display:none}
-#stage section.on{display:flex}
-#stage section[style*="display:grid"].on{display:grid}
+#stage section{position:absolute;inset:0;width:1920px;height:1080px;box-sizing:border-box}
+#stage section:not(.on){display:none!important}
 h1,h2,h3,p{margin:0} table{border-collapse:collapse} th,td{padding:.35em .6em;border-bottom:1px solid #D6DEE8;vertical-align:top} th{font-weight:600}
 #nav{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:10px;align-items:center;color:#BFD8D5;font-size:14px;z-index:5}
 #nav button{background:#0FA396;color:#001F3F;border:0;border-radius:4px;padding:8px 14px;font:600 14px "IBM Plex Sans",sans-serif;cursor:pointer}
