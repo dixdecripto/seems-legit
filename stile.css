@@ -17,7 +17,7 @@ body{margin:0;background:var(--white);color:var(--ink);font-family:var(--body);f
 .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin:0 0 14px}
 .stamp{width:min(420px,80%);height:auto;display:block;margin:0 0 10px -10px}
 h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,6.5vw,72px);line-height:.95;margin:0;letter-spacing:.01em;text-wrap:balance}
-.sub{font-size:18px;color:#DCE6F2;max-width:58ch;margin:18px 0 0}
+.sub{font-size:18px;color:#DCE6F2;max-width:none;margin:18px 0 0}
 .when{display:flex;flex-wrap:wrap;gap:8px 24px;font-family:var(--mono);font-size:14px;color:#DCE6F2;margin:22px 0 26px;letter-spacing:.04em;text-transform:uppercase}
 .when b{color:var(--teal);font-weight:500}
 .btn{display:inline-block;background:var(--teal);color:var(--navy);font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:.04em;text-transform:uppercase;padding:12px 26px;border-radius:4px;text-decoration:none;border:0;cursor:pointer}
@@ -40,7 +40,7 @@ h3{font-family:var(--display);font-weight:600;font-size:24px;margin:0 0 4px;lett
 .p .r{font-family:var(--mono);font-size:12px;color:var(--teal);letter-spacing:.06em;text-transform:uppercase;margin:0 0 8px}
 .p p{margin:0;font-size:15px;color:var(--muted)}
 .who .box{background:var(--navy);color:#fff;border-radius:6px;padding:28px 28px}
-.who .box p{margin:0;font-size:18px;max-width:70ch;color:#DCE6F2}
+.who .box p{margin:0;font-size:18px;max-width:none;color:#DCE6F2}
 .form-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:36px;padding-bottom:56px}
 .form-grid p{color:var(--muted);margin:0 0 10px}
 .small{font-size:14px}
@@ -56,8 +56,9 @@ form .btn{justify-self:start;margin-top:4px}
 .esito.ok{background:#E4F3EA;color:#1E6B40}
 .esito.err{background:#FBE4E1;color:#8E2A22}
 footer{background:var(--navy);color:#DCE6F2;padding-block:28px 40px;margin-top:20px}
-footer p{margin:14px 0 0;font-size:14px;max-width:70ch}
+footer p{margin:14px 0 0;font-size:14px;max-width:none}footer a{color:inherit}footer .links{margin-top:10px;opacity:.85}
 footer a{color:var(--teal)}
 @media (max-width:860px){.hero-grid,.form-grid{grid-template-columns:1fr}.cols{grid-template-columns:1fr}.people{grid-template-columns:1fr 1fr}}
 @media (max-width:480px){.people{grid-template-columns:1fr}.numbers b{font-size:38px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.numbers span b{font:inherit;font-weight:700;color:inherit;display:inline;line-height:inherit}
