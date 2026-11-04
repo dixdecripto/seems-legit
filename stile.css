@@ -8,6 +8,7 @@ body{margin:0;background:var(--white);color:var(--ink);font-family:var(--body);f
 .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
 .hero .wrap{position:relative}
 .brands{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.brands img{width:auto}
 .brands .l-baited{height:28px}
 .brands .l-indago{height:26px}
 .brands .x{font-family:var(--display);color:var(--teal);font-size:22px;font-weight:600}
@@ -52,6 +53,8 @@ input:focus-visible,select:focus-visible{outline:3px solid var(--teal);outline-o
 .chk input{margin-top:4px;width:18px;height:18px;accent-color:var(--teal)}
 .chk a{color:var(--teal)}
 form .btn{justify-self:start;margin-top:4px}
+form .btn:focus-visible{outline-color:var(--navy)}
+.btn:disabled{cursor:progress;opacity:.7}
 .esito{padding:12px 14px;border-radius:4px;background:var(--ice);color:var(--ink);font-size:15px;margin:0}
 .esito.ok{background:#E4F3EA;color:#1E6B40}
 .esito.err{background:#FBE4E1;color:#8E2A22}
